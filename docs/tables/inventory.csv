@@ -1,0 +1,13 @@
+piece,file,status
+"F=+1 W to W^T 25 to 26","docs/PLUS_ONE.md; docs/F_PM1.md",written
+"F=-1 reverse 26 to 25",docs/F_PM1.md,written
+"F=-1 fiber W=-1 bouquet of 25","docs/F_PM1.md; docs/FIBERS.md",written
+"Sign flip is not F=-1",docs/F_PM1.md,written
+"|Aut|=30 and c-hat=4/3 both sides","docs/COUNTS.md; docs/TRANSPOSE.md",written
+"W Jacobian 25 monomials","docs/LOCKED.md; docs/JACOBIAN.md",written
+"W^T Jacobian 26 monomials",docs/TRANSPOSE.md,written
+"W Steenbrink 1,2,3,4,5,4,3,2,1",docs/F_PM1.md,written
+"Delta and zeta",docs/ZETA.md,written
+"Lean mu 25/26/+1",lean/MilnorCount.lean,written
+"Suspension W+z^2 mu=25",docs/SUSPENSION.md,written
+"Author copyright Apache-2.0","AUTHORS.md; LICENSE; NOTICE",written

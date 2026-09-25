@@ -1,0 +1,6 @@
+row,detA,mu
+Meaning,diagonal symmetry order / exponent volume,Jacobian dimension / vanishing cycles
+W,30,25
+W^T,30,26
+F,27000,15625
+Preserved_by_BHK_transpose,yes,no
