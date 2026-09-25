@@ -1,8 +1,8 @@
 item,status
-"30 = |det A| = |Aut|, not mu",closed
-"mu(W)=25, mu(W^T)=26",closed
-"three-block F: 25^3=15625, 30^3=27000",closed
-"inner modality 6 and 5",closed
-"six-line moduli 6-3=3",closed
-"not ADE (mu <= 8, inner modality 0)",closed
-"BHK keeps |Aut| and hat c = 4/3 only",closed as a classification
+30 = |det A| = |Aut|, not mu,closed
+mu(W)=25; mu(W^T)=26,closed
+three-block F: 25^3=15625; 30^3=27000,closed
+inner modality 6 and 5,closed
+six-line moduli 6-3=3,closed
+not ADE (mu<=8, inner modality 0),closed
+BHK keeps |Aut| and c-hat=4/3 only,closed as a classification
