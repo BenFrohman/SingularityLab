@@ -21,4 +21,6 @@ Not a Hodge miss. Not Term A. Not Term B.
 [PREPRINT_FINDINGS.md](PREPRINT_FINDINGS.md)
 
 FJRW note: [docs/FJRW.md](docs/FJRW.md)  
-Stepwise ranks: [docs/FJRW_CALCS.md](docs/FJRW_CALCS.md)
+Stepwise ranks: [docs/FJRW_CALCS.md](docs/FJRW_CALCS.md)  
+FJRW numbers (ranks only): [docs/FJRW_NUMBERS.md](docs/FJRW_NUMBERS.md)  
+Guéré vs three-block F: [docs/GUERE_AND_TS.md](docs/GUERE_AND_TS.md)
