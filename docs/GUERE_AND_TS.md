@@ -1,60 +1,89 @@
-# Guere applies. Three-block F is not a product of correlators.
+# Guéré applies. Three-block F is not a product of correlators.
 
 Author: Benjamin Stanley Frohman (@BenFrohman)
 Copyright (c) 2026 Benjamin Stanley Frohman. Apache-2.0.
-Date: 25 September 2026
 
-## 1. What Guere's formula is
+Locked: μ(W)=25, μ(W^T)=26, |Aut|=30.
 
-Guere, Hodge integrals in FJRW theory (Michigan Math. J. 66, 2017).
+## 1. What Guéré’s chain formula is
 
-Input: one chain polynomial
+A chain polynomial in N variables is the specific coupling
 
-    W = x1^{a1} x2 + x2^{a2} x3 + ... + x_{N-1}^{a_{N-1}} x_N + x_N^{a_N}
+    W = x1^{a1} x2 + x2^{a2} x3 + ··· + x_{N-1}^{a_{N-1}} x_N + x_N^{a_N}.
 
-and any admissible group G. Output: in every genus, without semisimplicity,
+Our atom is N=2, a1=5, a2=6:
 
-    c_top(E^vee) cup [virtual class]_{PV}
+    W = u^5 v + v^6.
 
-equals a limit of characteristic classes of -R pi_* L_j and of the Hodge bundle, with the chain relations t_j^{a_j} t_{j+1} = 1.
+That is a chain. It is not a Fermat (sum of pure powers) and not a loop (cycle of couplings).
 
-Together with Mumford and Chiodo, that computes Hodge integrals
+Guéré, *Hodge integrals in FJRW theory* (Michigan Math. J. 66, 2017; arXiv:1509.07047), Theorem 0.1:
 
-    integral_{M_{g,n}} lambda_g cup alpha
+for any chain W, any admissible G, any genus g, and insertions γ(1),…,γ(n) in G,
 
-on the moduli of (W,G)-spin curves.
+    λ_g^vee ∪ c_vir^{PV}(γ(1),…,γ(n))_{g,n}
+    = lim_{t1 → 1}  ∏_{j=1}^N  c_{t_j}(−R^• π_* L_j)  ·  c_{t_{N+1}}(E^vee),
 
-## 2. Why this atom is in range
+with the chain relations t_j^{a_j} t_{j+1} = 1.
 
-W = u^5 v + v^6 is the N=2 chain with a1=5, a2=6. The formula applies to (W, G) for any admissible G up to Aut of order 30. That is a statement about one two-variable germ. It is not a list of numbers already evaluated in this lab.
+The left side is the Hodge-integral slice of the Polishchuk–Vaintrob virtual class. The right side is a limit of characteristic classes of the pushforwards of the W-spin line bundles. No semisimplicity of the CohFT is assumed. Broad insertions are allowed.
 
-## 3. What Thom-Sebastiani does keep
+For this atom N=2, a1=5, a2=6, the relations collapse to
 
-F = W(u0,v0) + W(u1,v1) + W(u2,v2) is a sum of isolated singularities in disjoint variables.
+    t1^5 t2 = 1,     t2^6 t3 = 1
 
-Classical:
+(up to the last-variable convention in Guéré). G may be any admissible subgroup of Aut(W), so |G| divides 30 and contains J. That is the sense in which “Guéré’s chain formula does.”
 
-    mu(F) = mu(W)^3 = 15625
-    Jac(F) isomorphic to Jac(W) tensor Jac(W) tensor Jac(W)
-    Aut(F) = Aut(W)^3, order 27000
-    hat c(F) = 3 * (4/3) = 4
+What the formula does *not* hand over without a machine run: a list of rational numbers. It hands over an algorithm. This lab has not executed that algorithm.
 
-State spaces of Landau-Ginzburg models multiply under Thom-Sebastiani (with a Koszul sign and a product of groups). That is a tensor of vector spaces, not a product of integrals.
+## 2. Why F is not a chain, and not a product
 
-## 4. Why correlators do not multiply
+The locked sextic is the Thom–Sebastiani sum of three copies of the same atom, in disjoint variables:
 
-An FJRW correlator of F is an intersection number on the moduli of F-spin orbicurves: six line bundles (one per variable) coupled by the Witten equation of the six-variable potential.
+    F = W(u0,u3) + W(u1,u4) + W(u2,u5).
 
-An FJRW correlator of W is an intersection number on the moduli of W-spin orbicurves: two line bundles coupled by the two-variable potential.
+F is six-variable. It is a *sum of three chains*, not one chain. Guéré’s input is one chain polynomial. Feeding F into Theorem 0.1 as if it were a single chain is a type error.
 
-Those are different moduli spaces. There is no identity of the form
+What Thom–Sebastiani *does* give:
 
-    <alpha, beta, gamma>_{g,n}^{F, G^3}  =  product of three W-correlators.
+    Jac(F) ≅ Jac(W) ⊗ Jac(W) ⊗ Jac(W)
+    dim = 25^3 = 15625
+    Aut(F) ≅ Aut(W)^3,    |Aut(F)| = 30^3 = 27000
+    ĉ(F) = 4/3 + 4/3 + 4/3 = 4.
 
-Genus zero and state-space level can factor. Positive-genus virtual classes do not, because the Hodge bundle and the nodes of the curve see all variables at once. Guere's chain relations t_j^{a_j} t_{j+1}=1 are written for one chain of length N. They are not three copies of the N=2 relation running in parallel on the same curve.
+At the level of *state spaces* (vector spaces, or Frobenius algebras in genus zero after a sign), LG models multiply under Thom–Sebastiani.
 
-F itself is not a chain in six variables. A six-variable chain would look like x0^{a} x1 + x1^{b} x2 + ... + x5^{c}. The locked sextic is a sum of three disjoint two-variable chains. Guere's theorem as stated does not apply to that sum.
+What it does *not* give: a factorization of the virtual class on the moduli of F-spin curves as a product of three virtual classes on the moduli of W-spin curves.
 
-## 5. What this does not prove
+A correlator of F in genus g with n markings is an integral on
 
-It does not evaluate a single Guere integral. It does not produce a miss class on V(F). It does not inhabit Hodge Term B.
+    Mbar_{g,n}^{F, G_F}.
+
+That moduli space parametrizes orbicurves equipped with line bundles for *all six* variables of F, coupled by three separate chain Witten equations. It is not the product
+
+    Mbar_{g,n}^{W,G} × Mbar_{g,n}^{W,G} × Mbar_{g,n}^{W,G}.
+
+Even the expected dimensions do not multiply that way: one curve, one Hodge bundle, one virtual class. Mixing insertions that live on different blocks still sees a single curve. So
+
+    ⟨α ⊗ β ⊗ γ⟩_{g,n}^{F}
+    ≠
+    ⟨α⟩_{g,n}^{W} · ⟨β⟩_{g,n}^{W} · ⟨γ⟩_{g,n}^{W}
+
+in general. The equality can hold in very special TQFT situations (disconnected targets, or after a Künneth argument that this moduli space does not supply). It is not a theorem for FJRW of a Thom–Sebastiani sum in positive genus.
+
+Genus zero, three points, after identifying state spaces with Jacobian tensors, is the one place a product of structure constants can appear — and even there the pairing and the unit have to be matched. That is not Guéré’s higher-genus formula, and it is not a table this lab has computed.
+
+## 3. What follows for the fourfold
+
+Chiodo–Ruan LG/CY matches *dimensions* of FJRW(F, ⟨J⟩) to Hodge numbers of V(F) when the Calabi–Yau condition holds. That is a state-space count. It is not a product of three Guéré integrals, and it is not a class in H^{2,2}(V(F)) missed by cl.
+
+## 4. Closed vs open
+
+| claim | status |
+|---|---|
+| W is a chain, so Guéré Theorem 0.1 applies | closed |
+| F is a TS-sum of three chains, not one chain | closed |
+| Jac and Aut multiply | closed, 25^3 and 30^3 |
+| correlators of F equal a product of correlators of W | false in general; not a theorem |
+| a computed Guéré table for this (W,G) | not run |
+| Term B | empty |
