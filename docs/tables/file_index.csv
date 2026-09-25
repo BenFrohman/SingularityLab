@@ -1,0 +1,9 @@
+file,role
+docs/FJRW.md,verbatim FJRW write-up
+docs/FJRW_CALCS.md,stepwise ranks
+docs/FJRW_NUMBERS.md,computed ranks and Aut sectors; no fake integrals
+docs/CHAIN_ATOM_DIAGRAM.md,mermaid review figure
+docs/CHAIN_ATOM_FIGURE.md,panel figure of the locked sextic atom
+PREPRINT_FINDINGS.md,findings paper
+README.md,authorship license pointers
+LICENSE,"Apache-2.0, (c) 2026 Benjamin Stanley Frohman"
