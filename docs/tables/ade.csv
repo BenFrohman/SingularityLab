@@ -1,0 +1,8 @@
+type,form,mu,simple
+A_k,x^{k+1}+y^2,k,yes
+D_k,x^2 y+y^{k-1},k,yes
+E6,x^3+y^4,6,yes
+E7,x^3+xy^3,7,yes
+E8,x^3+y^5,8,yes
+W,u^5 v+v^6,25,no
+WT,u^5+u v^6,26,no

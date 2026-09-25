@@ -1,63 +1,44 @@
-# Arnold inner modality of the chain atom
+# Modality of W and W^T
 
 Author: Benjamin Stanley Frohman (@BenFrohman)
 Copyright (c) 2026 Benjamin Stanley Frohman. Apache-2.0.
-Date: 25 September 2026
 
-Locked: mu(W)=25, mu(W^T)=26, |det A|=30.
-The 11+15=26 count (full LTs u^4, uv^5, v^11) is closed data.
-Incomplete box walks are not recorded here.
+Closed data stay: μ(W)=25, μ(W^T)=26, |det A|=30.
 
-## Definition used
+Two different counts. Do not mix them, same lesson as |det A| vs μ.
 
-For a quasihomogeneous isolated singularity of degree d, Arnold inner modality
-is the number of monomials in a Jacobian basis of weighted degree >= d.
-Simple (ADE) means inner modality 0. Unimodal means 1.
+## Configuration moduli of the tangent cone
 
-## W = u^5 v + v^6
+W = v(u^5 + v^5) is six distinct lines through the origin.
+Configurations of r points on P^1 modulo PGL(2):
 
-Weights (1,1), d=6. Basis: {1,u,u^2,u^3} x {1,v,...,v^5} union {u^4}.
-Weighted degree of u^i v^j is i+j.
+    r − 3.
 
-Monomials with i+j >= 6:
+| r | type | r−3 |
+|---|---|---|
+| 2 | A_1 | 0 |
+| 3 | D_4 | 0 |
+| 4 | 1 modulus | 1 |
+| 5 | 2 | 2 |
+| 6 | this W | 3 |
 
-| monomial | degree |
-|---|---|
-| u v^5 | 6 |
-| u^2 v^4 | 6 |
-| u^2 v^5 | 7 |
-| u^3 v^3 | 6 |
-| u^3 v^4 | 7 |
-| u^3 v^5 | 8 |
+So the line arrangement of W has **3** moduli. ADE stops at three lines.
 
-Count: 6.
+## Inner modality (Arnold, Jacobian)
 
-So inner modality of W is 6. Not simple. Not unimodal. Not bimodal.
-Six distinct lines already have moduli (cross-ratios). ADE stops at three lines (D_4) and mu=8 (E_8).
+Inner modality m_0 is the number of Jacobian monomials of weighted degree ≥ deg(W).
 
-## W^T = u^5 + u v^6
+W, weights (1,1), degree 6. The 25 monomials with a+b ≥ 6:
 
-Weights (3,2), d=15. Basis: {v^0,...,v^10} union {u,u^2,u^3} x {v^0,...,v^4}.
-Weighted degree of u^i v^j is 3i+2j.
+    uv^5 (6), u^2 v^4 (6), u^3 v^3 (6),
+    u^2 v^5 (7), u^3 v^4 (7), u^3 v^5 (8).
 
-Monomials with 3i+2j >= 15:
+**m_0(W) = 6.**
 
-| monomial | degree |
-|---|---|
-| v^8 | 16 |
-| v^9 | 18 |
-| v^10 | 20 |
-| u^3 v^3 | 15 |
-| u^3 v^4 | 17 |
+W^T, weights (3,2), degree 15. Monomials with 3a+2b ≥ 15:
 
-Count: 5.
+    v^8, v^9, v^{10}, u^3 v^3, u^3 v^4.
 
-Inner modality of W^T is 5. Also not ADE.
+**m_0(W^T) = 5.**
 
-## Table
-
-| germ | mu | inner modality | ADE? |
-|---|---|---|---|
-| A_k, D_k, E_6, E_7, E_8 | <=8 | 0 | yes |
-| W | 25 | 6 | no |
-| W^T | 26 | 5 | no |
+These are not μ. They are not |Aut|. They are not the 3 line-moduli.
