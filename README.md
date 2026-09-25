@@ -1,35 +1,24 @@
 # SingularityLab
 
-Research lab for the isolated plane-curve germ
+Research lab for the chain germ
 
-    W = u^5 v + v^6
-
-and its Berglund–Hübsch transpose
-
-    W^T = u^5 + u v^6.
+    W = u^5 v + v^6,     W^T = u^5 + u v^6.
 
 **Author:** Benjamin Stanley Frohman (@BenFrohman)  
-**Copyright:** (c) 2026 Benjamin Stanley Frohman  
-**License:** Apache-2.0
+**Copyright:** © 2026 Benjamin Stanley Frohman  
+**License:** Apache-2.0 (see LICENSE)
 
-This is local singularity theory. It is not a class in
-H^4(X, Q) ∩ H^{2,2}(X) and it does not inhabit Hodge Term B.
+## Locked data
 
-Sister atom shelf: [ChainAtom-u5v-v6](https://github.com/BenFrohman/ChainAtom-u5v-v6).
+- μ(W) = 25
+- μ(W^T) = 26
+- |det A| = |Aut(W)| = 30
 
-## Locked integers
+Not a Hodge miss. Not Term A. Not Term B.
 
-| object | μ (Jacobian dim) | |Aut| = |det A| | ĉ |
-|---|---|---|---|
-| W = u^5 v + v^6 | **25** | 30 | 4/3 |
-| W^T = u^5 + u v^6 | **26** | 30 | 4/3 |
-| F = W ⊕ W ⊕ W | 25^3 = 15625 | 30^3 = 27000 | 4 |
+## Findings paper
 
-The 30 was mislabeled μ in earlier Hodge notes. It is the diagonal
-symmetry group. Transpose does not preserve Milnor number.
+[PREPRINT_FINDINGS.md](PREPRINT_FINDINGS.md)
 
-## Contents
-
-- `docs/MU_VS_AUT.md` — W Jacobian basis, Aut characters
-- `docs/TRANSPOSE.md` — W^T weights, μ=26 basis, charges
-- `AUTHORS.md`, `NOTICE`, `LICENSE`
+FJRW note: [docs/FJRW.md](docs/FJRW.md)  
+Stepwise ranks: [docs/FJRW_CALCS.md](docs/FJRW_CALCS.md)

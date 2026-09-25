@@ -3,67 +3,32 @@
 Author: Benjamin Stanley Frohman (@BenFrohman)
 Copyright (c) 2026 Benjamin Stanley Frohman. Apache-2.0.
 
-Closed singularity data stay: μ(W)=25, μ(W^T)=26, |Aut|=30. This note is what FJRW does with that pair. It is not Hodge Term B.
+FJRW is the live enumerative theory for this atom.
 
-## Input of the theory
+## What FJRW is
 
-Fan–Jarvis–Ruan–Witten theory takes a pair (W0, G):
+Fan–Jarvis–Ruan–Witten assigns a cohomological field theory to a Landau–Ginzburg orbifold (W, G): a quasihomogeneous isolated singularity and an admissible diagonal symmetry group. Correlators live on moduli of W-spin orbicurves. It is the A-model of the singularity, the LG counterpart of Gromov–Witten.
 
-- W0 a nondegenerate quasihomogeneous invertible polynomial,
-- G an admissible group of diagonal symmetries containing the grading element J.
+## Why this pair is in range
 
-Output: a cohomological field theory on a state space H_{W0,G}, with a virtual class on the moduli of W0-spin orbicurves. Genus-zero three-point correlators make H_{W0,G} a Frobenius algebra (the FJRW ring). Higher genus gives Hodge integrals and, when semisimple, integrable hierarchies.
+Invertible polynomials split into Fermat, chain, and loop atoms. This block is a chain.
 
-Invertible polynomials split as Fermat / chain / loop. This atom is a two-variable chain.
+    W = X^5 Y + Y^6,         W^T = X^5 + X Y^6.
 
-## Which orientation Fan–Shen computed
+Fan–Shen prove that the FJRW quantum ring of X^p + X Y^q is the Milnor ring of the dual X^p Y + Y^q. Here p=5, q=6, and gcd(p−1, q)=gcd(4,6)=2 ≠ 1, so the non-coprime case of that paper. The ring comparison therefore reads: FJRW of (W^T, G) against the Jacobian of W, dimension 25. The opposite arrow uses dimension 26.
 
-Fan–Shen, *Quantum ring of singularity X^p + XY^q* (Michigan Math. J. 62, 2013):
+Guéré computes Hodge integrals for any chain polynomial, any symmetry group, any genus, including broad insertions, with no semisimplicity hypothesis. The algorithm applies to (W, G) with |G| up to 30 = |Aut|. Output is numbers on spin moduli, not a class in H^{2,2}(X).
 
-    FJRW ring of (X^p + X Y^q, G_max)
-    　≅　 Milnor ring of the dual (X^p Y + Y^q).
+## Three-block F
 
-Our pair in those letters:
+Thom–Sebastiani sums tensor state spaces. They do not tensor correlators. A full FJRW theory of F = W ⊕ W ⊕ W is a separate computation. Chiodo–Ruan LG/CY matches state-space dimensions of FJRW(F, ⟨J⟩) with Hodge numbers of V(F) when the Calabi–Yau condition holds. That is a dimension match. It is not Term B.
 
-    W^T = u^5 + u v^6 = X^5 + X Y^6     (p=5, q=6)
-    W   = u^5 v + v^6   = X^5 Y + Y^6
+## What this lab can claim
 
-So the theorem, if the group and coprimeness hypotheses hold, identifies
+The atom is the exact Fan–Shen block of type (5,6). Guéré’s chain algorithm applies. The locked integers 25, 26, 30 are the input ranks (Jacobian dimensions and group order), not the correlators.
 
-    FJRW(W^T, G_max)  ≅  Jac(W)   (dimension 25)
-    FJRW(W,   G_max)  ≅  Jac(W^T) (dimension 26)
+## What is not computed here
 
-Fan–Shen treat first the case gcd(p−1, q)=1. Here gcd(4,6)=2, so the coprime section does not apply off the shelf. The paper also discusses the general two-variable chain. This lab does not recompute their structure constants. What is recorded is the identification of the atom with that family, and the two Jacobian dimensions that the rings would have to match.
+A numerical table of FJRW correlators for (W, ⟨J⟩) or (W^T, ⟨J^T⟩). The three-block potential of F. A miss class on V(F). Heterotic c=9.
 
-## Guéré: Hodge integrals on any chain
-
-Guéré, *Hodge integrals in FJRW theory* (Michigan Math. J. 66, 2017; arXiv:1509.07047).
-
-Input: any chain
-
-    x1^{a1} x2 + ··· + x_{N-1}^{a_{N-1}} x_N + x_N^{a_N}
-
-with any admissible G. Our W is the N=2 case a1=5, a2=6. The theorem is a formula for
-
-    c_top(E^vee) ∪ [virtual class of Polishchuk–Vaintrob]
-
-in every genus, with no semisimplicity assumption. Consequences named in that paper: computer evaluation of Hodge integrals, double-ramification hierarchies, tautological relations on W-spin moduli.
-
-Output of a run would be rational numbers on the moduli of W-spin curves. Not a class in H^4(X,Q)∩H^{2,2}(X) on the fourfold V(F).
-
-## Three-block sum F
-
-F = W ⊕ W ⊕ W is Thom–Sebastiani. State spaces of LG models multiply under Thom–Sebastiani after a sign and a group product. That is not a product formula for FJRW correlators in positive genus. Guéré’s chain formula applies to one chain, not automatically to a sum of three chains in six variables. Chiodo–Ruan LG/CY matches state-space dimensions of (F, ⟨J⟩) to Hodge numbers of V(F). That match is a dimension count, already on the fourfold ledger. It is not Term B.
-
-## What FJRW does not do here
-
-- It does not produce a miss class on V(F).
-- It does not fill a Fourier–Mukai kernel on X × Y.
-- It does not compute the three-variable Ebeling–Gusein-Zade zeta identity.
-- Semisimplicity of the two-variable FJRW CohFT is a conjecture in Francis–He–Shen (arXiv:2302.10129) for (W, ⟨J⟩); proved for simple singularities and almost all Brieskorn–Pham. This chain is not ADE, so that conjecture is open for this atom unless a later case of their list covers p=5, q=6.
-
-## Files this note sits with
-
-- docs/DUAL_POLYNOMIALS.md — BHK what is kept
-- docs/ZETA.md — classical monodromy, not FJRW numbers
-- PREPRINT_FINDINGS.md §6
+Step-by-step ranks: docs/FJRW_CALCS.md.

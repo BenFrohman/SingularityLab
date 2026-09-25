@@ -1,80 +1,81 @@
-# Stepwise calculations that feed FJRW
+# Stepwise ranks that FJRW takes as input
 
 Author: Benjamin Stanley Frohman (@BenFrohman)
 Copyright (c) 2026 Benjamin Stanley Frohman. Apache-2.0.
-Date: 25 September 2026
 
-These are the ranks the enumerative theory consumes. They are not the correlators.
+These are the calculations already on the lab. They are the *ranks* a correlator computation would ingest. They are not the correlators.
 
-## 1. Exponent matrix and Aut
+## 1. Exponent matrix and |Aut|
 
-W = u^5 v + v^6 has matrix
+    W = u^5 v + v^6
+    A = [[5, 1], [0, 6]]
+    |det A| = 30 = |Aut(W)|
 
-    A = [[5, 1], [0, 6]],    det A = 30.
+Characters: μ^6 = 1 and λ^5 μ = 1. Thirty solutions. Same 30 for W^T.
 
-Diagonal characters: mu^6 = 1 and lambda^5 mu = 1. Thirty solutions. Same det for A^T. So |Aut(W)| = |Aut(W^T)| = 30. This is the largest admissible G.
+## 2. Weights and central charge
 
-## 2. Weights and mu(W)
+W: weights (1,1), degree 6.
 
-W is weighted-homogeneous of degree 6 with weights (1,1):
+    q_u = q_v = 1/6
+    q_u + q_v = 1/3
+    ĉ(W) = 2 − 2(q_u + q_v) = 4/3
 
-    mu(W) = (6/1 - 1)(6/1 - 1) = 25.
+W^T: weights (3,2), degree 15.
 
-Six lines through the origin: mu = (6-1)^2 = 25. Conversion 30 * 5/6 = 25.
-Leading terms v^6, u^5, u^4 v. Monomials: {1,u,u^2,u^3} x {1,...,v^5} union {u^4} = 25.
+    q_u = 3/15 = 1/5,   q_v = 2/15
+    q_u + q_v = 1/3
+    ĉ(W^T) = 4/3
 
-## 3. Weights and mu(W^T)
+J acts by x_i → exp(2π i q_i) x_i. For W, J = (ζ_6, ζ_6), order 6. Admissible G contains J and sits in Aut, so |G| divides 30 and is a multiple of 6.
 
-W^T = u^5 + u v^6, weights (3,2), degree 15:
+## 3. Milnor numbers (Jacobian dimensions = possible ring ranks)
 
-    mu(W^T) = (15/3 - 1)(15/2 - 1) = 4 * 13/2 = 26.
+W, Milnor–Orlik:
 
-Identity: v^5 (5 u^4 + v^6) - 5 u^3 (u v^5) = v^11.
-Leading terms u^4, u v^5, v^11. Monomials: {v^0..v^10} union {u,u^2,u^3} x {v^0..v^4} = 11+15 = 26.
+    μ(W) = (6/1 − 1)^2 = 25
 
-## 4. Fan-Shen labels
+Leading terms v^6, u^5, u^4 v. Monomials {1,u,u^2,u^3}×{1,...,v^5} ∪ {u^4} = 25.
 
-    W   = X^5 Y + Y^6     (dual form)
-    W^T = X^5 + X Y^6     (Fan-Shen input form)
-    p = 5, q = 6, gcd(p-1, q) = gcd(4,6) = 2.
+W^T, Milnor–Orlik:
 
-Coprime theorem does not apply off the shelf. Dimensions the rings must match, if the general two-variable statement holds:
+    μ(W^T) = (15/3 − 1)(15/2 − 1) = 4 · 13/2 = 26
 
-    dim FJRW(W^T, G) = dim Jac(W)   = 25
-    dim FJRW(W,   G) = dim Jac(W^T) = 26
+Identity: v^5(5u^4 + v^6) − 5u^3(uv^5) = v^{11}.
+Leading terms u^4, uv^5, v^{11}. Monomials {v^0..v^{10}} ∪ {u,u^2,u^3}×{v^0..v^4} = 11+15 = 26.
+
+Conversion on this chain: |det A| · (1 − 1/6) = 30 · 5/6 = 25.
+
+## 4. Fan–Shen labels
+
+    W^T = X^5 + X Y^6     ⇒  p=5, q=6
+    W   = X^5 Y + Y^6     ⇒  dual form X^p Y + Y^q
+
+    gcd(p−1, q) = gcd(4, 6) = 2 ≠ 1
+
+Non-coprime case of Fan–Shen. Ring comparison, when the group hypotheses hold:
+
+    dim FJRW(W^T, G_max)  =  μ(W)    = 25
+    dim FJRW(W,   G_max)  =  μ(W^T)  = 26
 
 ## 5. What a correlator is
 
-An FJRW correlator
+An FJRW correlator of genus g with n insertions is a rational number
 
-    < tau_{k1}(alpha_1), ..., tau_{kn}(alpha_n) >_{g,n}^{W,G}
+    ⟨τ_{ℓ_1}(α_1), …, τ_{ℓ_n}(α_n)⟩_{g,n}^{W,G}
 
-is an intersection number on the virtual class of the moduli space of W-spin orbicurves of genus g with n markings. Each alpha_i is a state in the FJRW state space (narrow or broad sector). Each tau_k is a psi-class power at that marking. The virtual class comes from the Witten equation
+obtained by pairing the virtual class on the moduli of W-spin orbicurves against ψ-classes and the FJRW state-space vectors α_i. In genus 0 with three unmarked insertions this is a structure constant of the FJRW ring.
 
-    dbar u_i + partial W / partial u_i = 0
+Guéré’s formula evaluates the Hodge-integral slice
 
-on those orbicurves.
+    ∫ c_top(E^vee) ∪ [virtual class]
 
-For this atom those numbers live on spin moduli. They are not classes in H^4(V(F), Q) cap H^{2,2}(V(F)). This lab has not tabulated them. Guere's formula is the machine that would.
+for any chain, any G, any genus. That machine has not been run on this atom in this lab. The numbers 25, 26, 30 are the dimensions of the algebras and the group, not those integrals.
 
-## Diagram
+## 6. Three blocks
 
-```mermaid
-flowchart LR
-  W["W = u^5 v + v^6\nmu = 25\ninner mod = 6"]
-  WT["W^T = u^5 + u v^6\nmu = 26\ninner mod = 5"]
-  A["|Aut| = 30\nhat c = 4/3"]
-  FS["Fan-Shen ring comparison\nFJRW(W^T) ~ Jac(W)"]
-  Gu["Guere chain Hodge integrals"]
-  F["F = W + W + W\nmu = 15625"]
-  X["X = V(F) fourfold\nHodge still open"]
-  W --> A
-  WT --> A
-  W --> FS
-  WT --> FS
-  W --> Gu
-  W --> F
-  F --> X
-```
+    μ(F) = 25^3 = 15625
+    |Aut(F)| = 30^3 = 27000
+    ĉ(F) = 4
 
-Three copies of the atom make F. F defines the fourfold. FJRW of one atom does not produce a miss class on that fourfold.
+State spaces tensor under Thom–Sebastiani. Correlators do not.
