@@ -4,20 +4,13 @@ Author: Benjamin Stanley Frohman (@BenFrohman)
 Copyright (c) 2026 Benjamin Stanley Frohman. Apache-2.0.
 Public: https://github.com/BenFrohman/SingularityLab
 
-| Piece | File | Status |
-|---|---|---|
-| F = +1: W → W^T, 25 → 26 | docs/PLUS_ONE.md, docs/F_PM1.md | written |
-| F = −1: reverse arrow 26 → 25 | docs/F_PM1.md | written |
-| F = −1: fiber W = −1 bouquet of 25 circles | docs/F_PM1.md | written |
-| Sign flip ≠ F = −1 | docs/F_PM1.md | written |
-| |Aut| = 30, ĉ = 4/3 both sides | docs/COUNTS.md, TRANSPOSE.md | written |
-| W Jacobian, 25 monomials | docs/LOCKED.md, JACOBIAN.md | written |
-| W^T Jacobian, 26 monomials | docs/TRANSPOSE.md | written |
-| W Steenbrink list + multiplicities 1,2,3,4,5,4,3,2,1 | docs/F_PM1.md | written |
-| 26 spectral numbers of W^T | docs/ZETA.md | written |
-| Δ_W and ζ̃_W | docs/ZETA.md | written |
-| Lean μ = 25 / 26 | lean/MilnorCount.lean | written |
-| Suspension W + z^2 | docs/SUSPENSION.md | written as a polynomial |
-| Author / © 2026 / Apache-2.0 / public | AUTHORS.md, LICENSE, NOTICE | written |
-| Fiber pictures | — | not drawn |
-| Saito dual identity of reduced zetas | — | not computed (EGZ is 3-variable) |
+| Item | Status |
+|---|---|
+| 26 spectral numbers of W^T | on disk — docs/ZETA.md |
+| Δ_W(t) = (t-1)^5 (t+1)^4 (t^2+t+1)^4 (t^2-t+1)^4 | on disk — docs/ZETA.md |
+| ζ̃_W(t) = (1-t)^5 (1+t)^4 (1+t+t^2)^4 (1-t+t^2)^4 | on disk — docs/ZETA.md |
+| Δ_{W^T}(t) = product of (t - exp(2πi α)) over those 26 α | on disk — docs/ZETA.md |
+| Lean μ(W)=25, μ(W^T)=26, shift +1 | on disk — lean/MilnorCount.lean (native_decide, no sorry) |
+| Suspension named W+z^2, μ=25 | on disk — docs/SUSPENSION.md |
+| Fiber pictures | on disk — docs/FIBERS.md |
+| Saito dual identity ζ̃_W ↔ ζ̃_{W^T} | not computed (EGZ paper is 3-variable) |
