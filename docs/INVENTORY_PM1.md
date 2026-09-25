@@ -11,15 +11,16 @@ Public: https://github.com/BenFrohman/SingularityLab
 | F=+1 / F=-1 two readings | docs/F_PM1.md |
 | μ(W)=25, μ(W^T)=26, |Aut|=30 | COUNTS, PLUS_ONE |
 | 25 monomials of W | JACOBIAN, LOCKED |
-| 26 monomials of W^T | TRANSPOSE, this file |
+| 26 monomials of W^T | TRANSPOSE |
 | 26 spectral numbers of W^T | docs/ZETA.md |
 | Δ_W(t) = (t^6-1)^4 (t-1) | docs/ZETA.md |
 | ζ_W(t) = (1-t^6)^{-4} | docs/ZETA.md |
 | Δ_{W^T}, ζ_{W^T} | docs/ZETA.md |
+| Lean μ=25 / 26 | lean/MilnorCount.lean |
+| Suspension W+z^2 named | docs/SUSPENSION.md |
 | Author / license / public | AUTHORS, LICENSE, NOTICE |
 
 ## Still not written
 
-- Lean kernel check of μ=25 / 26
 - Pictures of the fibers W=-1 and W^T=-1
-- Suspension W+z^2 (needed before strange duality)
+- Saito dual identity computed (EGZ paper is 3-variable)
