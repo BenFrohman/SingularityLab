@@ -3,7 +3,7 @@
 Author: Benjamin Stanley Frohman (@BenFrohman)
 Copyright (c) 2026 Benjamin Stanley Frohman. Apache-2.0.
 
-31 and 35 were produced. They are not μ.
+A finite box against an incomplete leading-term list is not μ.
 
 Rules for this lab:
 
