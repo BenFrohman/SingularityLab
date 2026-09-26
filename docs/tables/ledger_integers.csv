@@ -1,0 +1,16 @@
+symbol,value,name
+mu(W),25,Milnor number of u^5v+v^6
+mu(W^T),26,Milnor number of u^5+uv^6
+|det A|,30,order of Aut(W); not mu
+|Aut(W)|,30,same as |det A|
+mu(F),15625,25^3 Thom-Sebastiani
+|Aut(F)|,27000,30^3 product of groups
+c_hat(W),4/3,central charge per block
+c_hat(F),4,three blocks
+Jac(F)^J dim,2605,J-invariants of the cube
+Hilbert Jac(F)^J,"1,426,1751,426,1",degrees 0,6,12,18,24
+h^{2,2}_prim,1751,Griffiths residue
+h^{2,2},1752,1751 plus omega^2
+b_4,2606,2605 plus omega^2
+W 3-points,42,identity-sector triples values in {1,-6}
+box prints 31 and 35,NOT ON LEDGER,incomplete Groebner walk omitted v^11
