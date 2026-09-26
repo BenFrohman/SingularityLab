@@ -1,0 +1,9 @@
+degree,Jac_F_J_dim,Hodge_piece,dim,note
+0,1,H^{4,0},1,classical Griffiths
+6,426,H^{3,1},426,classical Griffiths
+12,1751,H^{2,2}_prim,1751,classical Griffiths
+18,426,H^{1,3},426,classical Griffiths
+24,1,H^{0,4},1,classical Griffiths
+,2605,sum primitive middle + ends,2605,equals dim Jac(F)^J
+,1752,h^{2,2} full,1752,1751 + Lefschetz omega^2
+,2606,b_4,2606,2605 + 1

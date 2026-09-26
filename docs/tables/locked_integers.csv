@@ -1,0 +1,15 @@
+object,quantity,value,name
+W,mu,25,Milnor number dim Jac(W)
+W,Aut,30,|det A| = |Aut(W)|
+W,c_hat,4/3,central charge
+W^T,mu,26,Milnor number dim Jac(W^T)
+W^T,Aut,30,|det A| preserved by transpose
+W^T,c_hat,4/3,central charge preserved
+F,mu,15625,25^3 Thom-Sebastiani
+F,Aut,27000,30^3 product of groups
+F,c_hat,4,sum of charges
+F,dim_Jac_J,2605,J-invariants of Jac(F)
+F,h22_prim,1751,Griffiths R_12
+F,h22_full,1752,1751 + omega^2
+F,b4,2606,2605 + 1
+W,three_points,42,unordered Jac triples values in {1,-6}

@@ -1,0 +1,13 @@
+claim,status
+mu(W)=25,locked
+mu(W^T)=26,locked
+|Aut|=30,locked not mu
+mu(F)=15625,locked 25^3
+|Aut(F)|=27000,locked 30^3
+Hilbert Jac(F)^J=(1,426,1751,426,1),locked arithmetic of this F
+those dims = primitive Hodge of smooth sextic fourfold,Griffiths 1968-69 not this lab
+42 Jac(W) triples,locked Jacobian computation
+31 or 35 as mu,NOT ON RECORD (incomplete LT box)
+every H^{2,2} class algebraic,NOT closed
+Term B miss class,empty
+Term A forall fourfolds,empty
