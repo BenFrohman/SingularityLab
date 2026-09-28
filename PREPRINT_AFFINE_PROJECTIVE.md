@@ -1,0 +1,1 @@
+See docs/AFFINE_VS_PROJECTIVE.md.
