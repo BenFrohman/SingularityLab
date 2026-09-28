@@ -29,13 +29,13 @@ List:
 
 $$
 -\tfrac23,\;
--\tfrac12,-\tfrac12,\;
+-\tfrac12^{\times 2},\;
 -\tfrac13^{\times 3},\;
 -\tfrac16^{\times 4},\;
 0^{\times 5},\;
 \tfrac16^{\times 4},\;
 \tfrac13^{\times 3},\;
-\tfrac12,-\tfrac12\text{ wait }\tfrac12^{\times 2},\;
+\tfrac12^{\times 2},\;
 \tfrac23.
 $$
 
