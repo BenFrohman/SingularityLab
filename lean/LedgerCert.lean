@@ -1,7 +1,9 @@
 /-
-Copyright (c) 2026 Benjamin Stanley Frohman.
-SPDX-License-Identifier: Apache-2.0
-
+Copyright (c) 2026 Benjamin Stanley Frohman. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Benjamin Stanley Frohman
+-/
+/-
 Standalone Lean 4. No Mathlib. No sorry.
 Kernel-checks the locked ledger arithmetic:
   μ(W)=25 cubes to 15625;

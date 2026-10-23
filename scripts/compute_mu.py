@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under Apache-2.0.
 """Reproduce Jacobian / Aut counts for W and W^T.
 Author: Benjamin Stanley Frohman. (c) 2026. Apache-2.0.
 """

@@ -1,3 +1,4 @@
+<!-- Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under Apache-2.0. -->
 # Gap status after zeta push
 
 Author: Benjamin Stanley Frohman. (c) 2026. Apache-2.0.

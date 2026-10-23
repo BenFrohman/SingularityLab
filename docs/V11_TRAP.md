@@ -1,3 +1,4 @@
+<!-- Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under Apache-2.0. -->
 # The v^{11} trap is not a dummy fill
 
 Author: Benjamin Stanley Frohman. © 2026. Apache-2.0. Public.

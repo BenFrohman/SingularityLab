@@ -1,3 +1,4 @@
+<!-- Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under Apache-2.0. -->
 # Monodromy of W and W^T
 
 Author: Benjamin Stanley Frohman. (c) 2026. Apache-2.0.

@@ -1,3 +1,4 @@
+<!-- Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under Apache-2.0. -->
 # Claims 56
 
 Author: Benjamin Stanley Frohman. © 2026. Apache-2.0. Public.

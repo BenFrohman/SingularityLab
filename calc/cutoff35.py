@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under Apache-2.0.
 # Author: Benjamin Stanley Frohman. Copyright (c) 2026. Apache-2.0.
 # Incomplete lex LTs {u^4, u v^5} + cutoff v<=19 print 35.
 # Adding v^11 restores 26. That 35 is not mu.

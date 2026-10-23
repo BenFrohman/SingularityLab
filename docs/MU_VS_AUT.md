@@ -1,3 +1,4 @@
+<!-- Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under Apache-2.0. -->
 # μ(W) = 25 is not |Aut(W)| = 30
 
 Author: Benjamin Stanley Frohman. Apache-2.0. (c) 2026.
