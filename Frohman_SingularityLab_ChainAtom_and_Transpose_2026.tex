@@ -1,0 +1,42 @@
+% Copyright (c) 2026 Benjamin Stanley Frohman. All rights reserved.
+% Released under Apache 2.0 license as described in the file LICENSE.
+% Authors: Benjamin Stanley Frohman (ORCID: 0009-0006-7068-3718)
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\title{\textbf{The Chain Atom $W=u^5v+v^6$, the Missing Leading Term $v^{11}$ in its Berglund--H\"ubsch Transpose $W^T=u^5+uv^6$, and Affine Milnor Fibre vs.\ Projective Fourfold Cohomology}}
+\author{Benjamin Stanley Frohman\\
+\small Independent Researcher \quad|\quad ORCID: \href{https://orcid.org/0009-0006-7068-3718}{0009-0006-7068-3718}\\
+\small \texttt{frohmanbenjamin@gmail.com}}
+\date{Origin Provenance: September 25, 2026 (06:00:50 CDT) \\ \small Repository: \texttt{BenFrohman/SingularityLab} \quad|\quad Licensed under Apache-2.0}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper synthesizes the three preprints in \texttt{BenFrohman/SingularityLab} (\texttt{PREPRINT\_FINDINGS.md}, \texttt{PREPRINT\_V11.md}, and \texttt{PREPRINT\_AFFINE\_PROJECTIVE.md}) investigating the invertible chain polynomial $W(u,v) = u^5v + v^6$, its Berglund--H\"ubsch transpose $W^T(u,v) = u^5 + uv^6$, and the three-block Thom--Sebastiani sextic fourfold $F = \sum_{i=0}^2 (x_i^5 x_{i+3} + x_{i+3}^6) \subset \mathbb{P}^5$. We prove and Lean-certify (\texttt{lean/MilnorCount.lean}, \texttt{LedgerIntegers.lean}, \texttt{LedgerCert.lean}) the invariant separation
+\[
+\mu(W) = 25, \qquad \mu(W^T) = 26, \qquad |\det A| = |\mathrm{Aut}(W)| = |\mathrm{Aut}(W^T)| = 30,
+\]
+with inner modalities $m_0(W)=6$ and $m_0(W^T)=5$, explain the Gr\"obner basis mechanism by which the pure power $v^{11} \in (\partial W^T)$ is eliminated in one step ($v^{11} = v^5 \partial_u W^T - \tfrac{1}{5}u^4\partial_v W^T + \dots$), and establish the container separation between the affine Milnor fibre ($\mu(F) = 25^3 = 15625$) and the projective primitive cohomology ($h^{2,2}_{\mathrm{prim}}(X) = \dim R_{12}(F) = 1751$).
+\end{abstract}
+
+\section{Main Invariant Theorems}
+\begin{theorem}[Chain Atom vs.\ Berglund--H\"ubsch Transpose]
+For $W = u^5v + v^6$ with exponent matrix $A = \bigl(\begin{smallmatrix}5 & 1\\ 0 & 6\end{smallmatrix}\bigr)$ and transpose $W^T = u^5 + uv^6$ with $A^T = \bigl(\begin{smallmatrix}5 & 0\\ 1 & 6\end{smallmatrix}\bigr)$:
+\begin{enumerate}
+  \item $|\det A| = |\det A^T| = |\mathrm{Aut}(W)| = |\mathrm{Aut}(W^T)| = 30$, and central charge $\hat{c}(W) = \hat{c}(W^T) = 4/3$.
+  \item $\mu(W) = (6-1)^2 = 25$, whereas $W^T$ is quasihomogeneous of weights $(3,2)$ and degree $15$ with $\mu(W^T) = (15/3 - 1)(15/2 - 1) = 26$.
+  \item In $\mathbb{C}[u,v]/(\partial W^T)$ where $\partial_u W^T = 5u^4 + v^6$ and $\partial_v W^T = 6uv^5$, the relation $v^6 \equiv -5u^4$ implies $v^{12} \equiv 25u^8$ and $u v^5 = 0 \implies v^{11} = v^5(-5u^4) = -5u^3(uv^5) \equiv 0$, cutting the monomial box at $v^{11}$ to yield dimension $26$.
+\end{enumerate}
+\end{theorem}
+
+\section*{License and Copyright}
+Copyright \copyright\ 2026 Benjamin Stanley Frohman. All rights reserved. Licensed under the Apache License, Version 2.0 (\url{http://www.apache.org/licenses/LICENSE-2.0}).
+\end{document}

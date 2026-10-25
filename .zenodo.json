@@ -1,0 +1,33 @@
+{
+  "title": "The Chain Atom W=u^5v+v^6, Missing Leading Term v^11 in its Berglund-Hubsch Transpose W^T, and Affine Milnor Fibre vs. Projective Fourfold Cohomology",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-09-25",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "doi": "10.5281/zenodo.23629492",
+  "creators": [
+    {
+      "name": "Frohman, Benjamin Stanley",
+      "affiliation": "Independent Researcher",
+      "orcid": "0009-0006-7068-3718"
+    }
+  ],
+  "keywords": [
+    "Milnor number",
+    "Berglund-Hubsch transpose",
+    "invertible polynomials",
+    "Grobner basis",
+    "Lean 4",
+    "singularity theory"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/BenFrohman/SingularityLab",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Origin Provenance: 2026-09-25 06:00:50 CDT (Git Initial Commit). Copyright (c) 2026 Benjamin Stanley Frohman. All rights reserved. Licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0).",
+  "description": "<p>Singularity theory laboratory and Lean 4 arithmetic certificates (<code>MilnorCount.lean</code>, <code>LedgerIntegers.lean</code>, <code>LedgerCert.lean</code>) proving <code>&mu;(W)=25</code>, <code>&mu;(W^T)=26</code>, <code>|det A| = |Aut(W)| = |Aut(W^T)| = 30</code>, the Gr&ouml;bner basis elimination of <code>v^{11} &isin; (&part;W^T)</code>, and the container separation between the affine Milnor fibre (<code>&mu;(F) = 15,625</code>) and projective primitive cohomology (<code>dim R_12(F) = 1,751</code>).</p>"
+}
