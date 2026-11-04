@@ -37,3 +37,11 @@ FJRW note: [docs/FJRW.md](docs/FJRW.md)
 Stepwise ranks: [docs/FJRW_CALCS.md](docs/FJRW_CALCS.md)  
 FJRW numbers (ranks only): [docs/FJRW_NUMBERS.md](docs/FJRW_NUMBERS.md)  
 Guéré vs three-block F: [docs/GUERE_AND_TS.md](docs/GUERE_AND_TS.md)
+
+## Zenodo archive
+
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23629491.svg)](https://doi.org/10.5281/zenodo.23629491) The Chain Atom W=u^5v+v^6, Missing Leading Term v^11 in its Berglund-Hubsch Transpose W^T, and Affine Milnor Fibre vs. Projective Fourfold Cohomology — all versions: [10.5281/zenodo.23629491](https://doi.org/10.5281/zenodo.23629491); latest version: [10.5281/zenodo.23629492](https://doi.org/10.5281/zenodo.23629492)
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23627613.svg)](https://doi.org/10.5281/zenodo.23627613) The chain atom W=u^5v+v^6: Milnor number 25, diagonal symmetry 30, and the transpose shift +1 — all versions: [10.5281/zenodo.23627613](https://doi.org/10.5281/zenodo.23627613); latest version: [10.5281/zenodo.23627614](https://doi.org/10.5281/zenodo.23627614)
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23632791.svg)](https://doi.org/10.5281/zenodo.23632791) Milnor Algebras of Two-Variable Invertible Chain Polynomials, Berglund-Hubsch Transpose Charge Shifts, and Affine vs. Projective Cohomology — all versions: [10.5281/zenodo.23632791](https://doi.org/10.5281/zenodo.23632791); latest version: [10.5281/zenodo.23632792](https://doi.org/10.5281/zenodo.23632792)
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23867571.svg)](https://doi.org/10.5281/zenodo.23867571) The Chain Atom W=u^5v+v^6, Missing Leading Term v^11 in its Berglund-Hubsch Transpose W^T, and Affine Milnor Fibre vs. Projective Fourfold Cohomology — all versions: [10.5281/zenodo.23867571](https://doi.org/10.5281/zenodo.23867571); latest version: [10.5281/zenodo.23867572](https://doi.org/10.5281/zenodo.23867572)
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23867605.svg)](https://doi.org/10.5281/zenodo.23867605) The chain atom W=u^5v+v^6: Milnor number 25, diagonal symmetry 30, and the transpose shift +1 — all versions: [10.5281/zenodo.23867605](https://doi.org/10.5281/zenodo.23867605); latest version: [10.5281/zenodo.23867606](https://doi.org/10.5281/zenodo.23867606)
