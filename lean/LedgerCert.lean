@@ -3,6 +3,7 @@ Copyright (c) 2026 Benjamin Stanley Frohman. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Benjamin Stanley Frohman
 -/
+
 /-
 Standalone Lean 4. No Mathlib. No sorry.
 Kernel-checks the locked ledger arithmetic:
@@ -14,6 +15,12 @@ Kernel-checks the locked ledger arithmetic:
 
 This certifies the integers. It does not construct a scheme,
 does not prove Hodge, and does not inhabit Term A or Term B.
+-/
+
+/-!
+# lean.LedgerCert
+
+Machine-checked Lean 4 module.
 -/
 
 namespace SingularityLab

@@ -3,12 +3,19 @@ Copyright (c) 2026 Benjamin Stanley Frohman. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Benjamin Stanley Frohman
 -/
+
 /-
   Standalone Lean 4. No Mathlib. No sorry.
 
   Kernel-checked arithmetic of the locked atom and the
   textbook sextic-fourfold diamond. This is bookkeeping.
   It is not Term A and not Term B.
+-/
+
+/-!
+# lean.LedgerIntegers
+
+Machine-checked Lean 4 module.
 -/
 
 namespace SingularityLab.Ledger
